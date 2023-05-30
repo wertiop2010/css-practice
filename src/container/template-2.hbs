@@ -1,12 +1,12 @@
 <div class="page">
   <div class="page_content">
     <header class="page_block">
-      <div class="header row g-0">
-        <div class="col-3">
+      <div class="header">
+        <div class="">
           {{> logo}}
         </div>
 
-        <nav class="header_nav col-9 ">
+        <nav class="header_nav">
           <div class="header_nav_right">
             {{> nav list=header}}
           </div>
@@ -25,33 +25,33 @@
     </section>
 
     <section class="page_block">
-      <div class="row g-4">
+      <div class="flex-container">
         {{#each preview}}
-          <div class="col-6">
-            {{> cardPreview data=this}}
-          </div>
+          
+            {{> cardPreview class="flex-item" data=this}}
+          
         {{/each}}
       </div>
     </section>
 
     <main class="page_block">
-      <div class="main g-0">
+      <div class="main">
         <div class="row">
           <div class="col-12">
             <div class="list_header">
-              <div class="row g-0">
-                <div class="col-7">
+              
+                <div>
                   <h2 class="list_title">List of posts</h2>
                 </div>
 
-                <div class="col-5">
+                <div>
                   <div class="category_list">
                     {{#each categories}}
                       <button class="category_button">{{text}}</button>
                     {{/each}}
                   </div>
                 </div>
-              </div>
+              
             </div>
           </div>
 
@@ -80,13 +80,13 @@
 
     <footer class="page_block">
      
-      <div class="row g-0 footer">
-        <div class="col-3">
+      <div class="footer">
+        <div>
           {{> logo}}
           <span class="footer_copyright">Copyright 2023-2024</span>
         </div>
         {{#each footer}}
-          <div class="col-3">
+          <div>
               <span class="footer_title">{{title}}</span>
               {{> nav list=links isVertical=true }}
           </div>

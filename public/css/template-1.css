@@ -154,3 +154,28 @@ p {
     overflow-x: hidden;
     text-overflow: ellipsis;
 }
+.hero_text {
+    background-image: url('/img/images.jpg');
+    background-attachment: fixed;
+     clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z');
+}
+body {
+    /* background-image: url('/img/images.jpg'); */
+    /* background-repeat: repeat-x; */
+    /* clip-path: circle(50%); */
+}
+.page {
+    background-color: transparent;
+}
+.card_block {
+    list-style: disc;
+}
+.card_description_item {
+    display: list-item;
+}
+/* .table tr{
+    border: 1px solid black;
+} */
+.table tr td {
+    border: 1px solid rgba(24, 16, 16, 0.498);
+}

@@ -31,6 +31,22 @@
     </div>
 
     <div class="page_block">
+      <table class="table">
+        <tbody>
+          {{#each footer}}
+          <tr>
+            {{#each links}}
+            <td>
+              {{text}}
+            </td>
+            {{/each}}
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="page_block">
      
       <footer class="row g-0 footer">
         <div class="col-3">
