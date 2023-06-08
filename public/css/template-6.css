@@ -468,3 +468,28 @@ text-align: left;
     color: #B1B1B1;
 
 }
+
+.hot {
+    
+    position: absolute;
+width: 90px;
+/* height: 53px; */
+right: 19%;
+/* top: 20px; */
+padding: 12px;
+
+
+background: #FF7347;
+text-align: center;
+border-radius: 70px;
+transform: rotate(30deg);
+z-index: 1;
+    color: #fff;
+    
+    font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0em;
+}
+ 
