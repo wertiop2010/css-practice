@@ -146,15 +146,15 @@
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 460px;
+    height: 100%;
 
     padding-left: 26px;
     padding-right: 19px;
     padding-bottom: 40px;
 
     gap: var(--space-l);
-
-    
-
 }
 
 .card_image {
@@ -201,57 +201,15 @@
     
 }
 
-.form_button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 95px;
-    gap: 10px;
-    font-family: var(--font-style);
-    font-style: normal;
-    font-weight: var(--weight-text);
-    font-size: 20px;
-    line-height: 100%;
-    text-decoration: none;
-    background: var(--color-white);
-    border-radius: 4.8px;
 
+.form_button:hover {
+    opacity: 0,5;
 }
 
 .button:hover {
     opacity: 0.7;
 }
 
-.form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 80px 0;
-    background:#563D7C;
-    padding: 24px;
-    padding-bottom: 25px;
-    border-radius: var(--border-radius);
-}
-
-.form_content {
-    display: flex;
-
-    flex-direction: column;
-    justify-content: center;
-    
-
-}
-.form_title {
-    color: var(--color-white);
-    font-family: var(--font-style);
-    font-style: normal;
-    font-weight: var(--weight-text);
-    font-size: 24px;
-    line-height: 16px;
-    padding-bottom: 12px;
-
-}
 
 
 
