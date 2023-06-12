@@ -1,3 +1,5 @@
+@layer main, component, style;
+
 :root {
     --space-m: 12px;
     --space-xm: 16px;
@@ -218,4 +220,55 @@
     width: 100%;
     max-width: 160px;
     color: var(--color-text);
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media all and (width <= 600px) {
+    .blog {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media all and (600px < width <= 800px) {
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.form {
+    gap: var(--space-l)
+}
+
+@media all and (width <= 560px) {
+    .form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .form_info {
+        max-width: 300px;
+        width: 100%;
+        line-height: 150%;
+    }
+
+    .form_content {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.hero_container {
+    container-type: inline-size;
+    container-name: hero;
+}
+
+@container hero (width < 960px) {
+    .hero {
+        flex-direction: column;
+    }
 }

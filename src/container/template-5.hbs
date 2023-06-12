@@ -50,11 +50,20 @@
   </form>
   {{/with}}
 
+  {{!-- <div class="advantages"> --}}
+    {{#each advantages}}
+    <div class="advantage">
+      <strong>{{title}}</strong>
+      <p>{{text}}</p>
+    </div>
+    {{/each}}
+    {{!--
+  </div> --}}
 </main>
 
 <div class="advantages">
   {{#each advantages}}
-  <div>
+  <div class="advantage">
     <strong>{{title}}</strong>
     <p>{{text}}</p>
   </div>
